@@ -1,18 +1,22 @@
-public abstract class Figura {
-	
-	public static void main(String[] args){
+public abstract class Figura implements Comparable <Figura>, Movible {
+
+	public static void main(String[] args) {
 		
-		Figura figuras[] = new Figura[3];
-		figuras[0] = new Rectangulo(3,6);
-		figuras[1] = new Cuadrado(4);
-		figuras[2] = new Triangulo(2,3);
+		Figura figuras[] = new Figura[1];
+		figuras[0] = new Rectangulo(new Punto(3,3), new Punto(3,3));
 		
-		for(int i=0; i < figuras.length; i++){
+		for(int i = 0; i < figuras.length; i++){
 			System.out.println(figuras[i].area());
 		}
-		
+
 	}
 	
 	public abstract double area();
-
+	
+	@Override
+	public int compareTo(Figura arg0) {
+		// TODO Apéndice de método generado automáticamente
+		return 0;
+	}
+	
 }

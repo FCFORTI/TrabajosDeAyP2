@@ -1,17 +1,30 @@
-public class Rectangulo extends Figura{
+public class Rectangulo extends Figura {
 	
 	private double base, altura;
+	private Punto esquinaInferiorIzq, esquinaSuperiorDer;
 	
-	public Rectangulo(double base, double altura){
-		if(base<0 || altura<0){
-			throw new Error("Los lados ingresados debem ser mayores a 0.");
-		}
-		this.base = base;
-		this.altura = altura;
+	public Rectangulo(Punto esquinaInferiorIzq, Punto esquinaSuperiorDer) {
+		
+		this.esquinaInferiorIzq = esquinaInferiorIzq;
+		this.esquinaSuperiorDer = esquinaSuperiorDer;
+		
+		this.base = esquinaSuperiorDer.getX() - esquinaInferiorIzq.getX();
+		this.altura = esquinaSuperiorDer.getY() - esquinaInferiorIzq.getY();
+		
 	}
-	
-	public double area(){
+
+	@Override
+	public double area() {
 		return base*altura;
 	}
+
+	@Override
+	public void mover(double incremetoX, double incrementoY) {
+		
+		esquinaSuperiorDer.mover(incremetoX, incrementoY);
+		esquinaInferiorIzq.mover(incremetoX, incrementoY);
+		
+	}
+
 
 }

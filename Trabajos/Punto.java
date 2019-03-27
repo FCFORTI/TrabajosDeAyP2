@@ -1,4 +1,4 @@
-public class Punto {
+public class Punto implements Movible {
 	
 	private double x;
 	private double y;
