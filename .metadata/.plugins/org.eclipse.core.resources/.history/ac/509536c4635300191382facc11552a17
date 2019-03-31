@@ -1,0 +1,47 @@
+package Guía3Ejercicio4;
+
+public abstract class Personas {
+	
+	private int dni, telefono;
+	private String direccion, fechaDeNacimiento;
+	
+	public void Persona(int dni, int telefono, String direccion, String fechaDeNacimiento){
+		this.dni = dni;
+		this.telefono = telefono;
+		this.direccion = direccion;
+		this.fechaDeNacimiento = fechaDeNacimiento;
+	}
+
+	public int getDni() {
+		return dni;
+	}
+
+	public void setDni(int dni) {
+		this.dni = dni;
+	}
+
+	public int getTelefono() {
+		return telefono;
+	}
+
+	public void setTelefono(int telefono) {
+		this.telefono = telefono;
+	}
+
+	public String getDireccion() {
+		return direccion;
+	}
+
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+
+	public String getFechaDeNacimiento() {
+		return fechaDeNacimiento;
+	}
+
+	public void setFechaDeNacimiento(String fechaDeNacimiento) {
+		this.fechaDeNacimiento = fechaDeNacimiento;
+	}
+
+}

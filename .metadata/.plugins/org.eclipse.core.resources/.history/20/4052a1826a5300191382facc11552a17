@@ -1,0 +1,14 @@
+package Guía3Ejercicio4;
+
+public class Estudiante extends Personas{
+
+	private int legajo;
+	private double promedio;
+	
+	public Estudiante(String nombre, String apellido,int dni, int telefono, String direccion, String fechaDeNacimiento, int legajo, double promedio){
+		super(nombre,apellido,dni,telefono,direccion,fechaDeNacimiento);
+		this.legajo = legajo;
+		this.promedio = promedio;
+	}
+	
+}

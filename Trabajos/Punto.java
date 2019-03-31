@@ -26,4 +26,11 @@ public class Punto implements Movible {
 		this.y = y;
 	}
 	
+    @Override
+    public void mover(double incrementoX, double incrementoY) {
+    	this.x += incrementoX;
+   	 	this.y += incrementoY;
+    }
+
+	
 }
