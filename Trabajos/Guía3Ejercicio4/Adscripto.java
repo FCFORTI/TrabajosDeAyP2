@@ -7,7 +7,11 @@ public class Adscripto extends Estudiante implements Sueldo{
 	
 	public Adscripto(String nombre, String apellido,int dni, int telefono, String direccion, String fechaDeNacimiento, int legajo, double promedio, int cantMaterias, double sueldoBase){
 		super(nombre,apellido,dni,telefono,direccion,fechaDeNacimiento,legajo,promedio);
-		this.cantMaterias = cantMaterias;
+		if(cantMaterias>3){
+			this.cantMaterias = 3;
+		} else {
+			this.cantMaterias = cantMaterias;
+		}		
 		this.sueldoBase = sueldoBase;
 	}
 
