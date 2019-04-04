@@ -1,0 +1,5 @@
+package Guía3Ejercicio4;
+
+public class Promedio {
+	public abstract calcularPromedio();
+}

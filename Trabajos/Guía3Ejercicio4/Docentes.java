@@ -1,6 +1,6 @@
 package Guía3Ejercicio4;
 
-public class Docentes extends Personas implements Sueldo{
+public class Docentes extends Personas{
 
 	private int cuil, antiguedad;
 	private double sueldoBase;
@@ -40,24 +40,25 @@ public class Docentes extends Personas implements Sueldo{
 	public double calcularSueldo() {
 		double sueldoFinal = this.sueldoBase;
 		if(antiguedad <= 10){
-			sueldoFinal = 0.10*sueldoBase;
+			sueldoFinal = sueldoBase + 0.10*sueldoBase;
 		}
 		if(antiguedad > 10 && antiguedad <= 15){
-			sueldoFinal = 0.15*sueldoBase;
+			sueldoFinal = sueldoBase + 0.15*sueldoBase;
 		}
 		if(antiguedad > 15 && antiguedad <= 20){
-			sueldoFinal = 0.20*sueldoBase;
+			sueldoFinal = sueldoBase + 0.20*sueldoBase;
 		}
 		if(antiguedad > 20){
-			sueldoFinal = 0.25*sueldoBase;
+			sueldoFinal = sueldoBase + 0.25*sueldoBase;
 		}
 		return sueldoFinal;
 	}
-	
+
 	@Override
-	public String toString() {
-		return "Docente [nombre=" + super.getNombre() + " "
-				+ super.getApellido() +  ", remuneracio=" + calcularSueldo() + "]";
+	public double calcularPromedio() {
+		// TODO Apéndice de método generado automáticamente
+		return 0;
 	}
+
 
 }

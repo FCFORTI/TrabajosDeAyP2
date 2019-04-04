@@ -1,6 +1,6 @@
 package Guía3Ejercicio4;
 
-public class Estudiante extends Personas{
+public class Estudiante extends Personas implements Promedio{
 
 	private int legajo;
 	private double promedio;
@@ -25,6 +25,17 @@ public class Estudiante extends Personas{
 
 	public void setPromedio(double promedio) {
 		this.promedio = promedio;
+	}
+
+	@Override
+	public double calcularSueldo() {
+		// TODO Apéndice de método generado automáticamente
+		return 0;
+	}
+
+	@Override
+	public double calcularPromedio() {
+		return this.promedio;
 	}
 	
 }

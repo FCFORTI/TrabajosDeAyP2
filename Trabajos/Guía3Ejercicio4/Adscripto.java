@@ -1,6 +1,6 @@
 package Guía3Ejercicio4;
 
-public class Adscripto extends Estudiante implements Sueldo{
+public class Adscripto extends Estudiante{
 	
 	private int cantMaterias;
 	private double sueldoBase;
