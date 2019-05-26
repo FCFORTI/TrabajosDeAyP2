@@ -1,6 +1,0 @@
-package Guía3Ejercicio4;
-import java.util.Comparator;
-
-public interface Sueldo extends Comparator<Sueldo>{
-	public double calcularSueldo();
-}

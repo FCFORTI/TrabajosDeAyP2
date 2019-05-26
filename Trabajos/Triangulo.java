@@ -11,4 +11,10 @@ public class Triangulo extends Figura{
 		return  (base*altura)/2;
 	}
 
+	@Override
+	public void mover(double incremetoX, double incrementoY) {
+		// TODO Apéndice de método generado automáticamente
+		
+	}
+
 }

@@ -1,6 +1,0 @@
-package Guía3Ejercicio4;
-
-public interface Sueldo extends Comparable<Sueldo>{
-	public double calcularSueldo();
-	public int compareTo();
-}

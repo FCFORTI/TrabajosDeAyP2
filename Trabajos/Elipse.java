@@ -16,5 +16,11 @@ public class Elipse extends Figura  {
 	public double area() {
 		return Math.PI * radio1 * radio2 ;
 	}
+
+	@Override
+	public void mover(double incremetoX, double incrementoY) {
+		// TODO Apéndice de método generado automáticamente
+		
+	}
 	
 }

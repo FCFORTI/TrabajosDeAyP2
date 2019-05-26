@@ -1,7 +1,0 @@
-package Guía3Ejercicio4;
-
-public interface Promedio {
-	
-	public double calcularPromedio();
-
-}
